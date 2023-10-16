@@ -2,10 +2,12 @@
 assignment 0
 
 
-# Check out solution URL
-$cat solution.txt
-rebecca-zavou.github.io
-# Ensure the URL exists
-$curl --output /dev/null --silent --head --fail rebecca-zavou.github.io \
-&& echo "URL exists" || echo "URL does not exist"
-URL exists
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
