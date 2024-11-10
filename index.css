@@ -38,17 +38,18 @@ p {
 }
 
 .section {
-    opacity: 0;
-    transform: translateY(20px);
+    opacity: 1; 
+    transform: translateY(0); 
+    visibility: visible; 
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    visibility: hidden;
-  }
-  
-  .section.show {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
-  }
+}
+
+.section-contact .fa-linkedin {
+    font-size: 30px;
+    color: #0e76a8;
+    margin-right: 8px;
+    transition: color 0.3s ease;
+}
 
 .section-contact .fa-linkedin:hover {
     color: #0e77a870;
