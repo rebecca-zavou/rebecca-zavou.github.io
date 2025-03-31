@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Revekka's CV</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="scanlines"></div>
+
+    <pre class="boot-text start-screen">
+        > Initializing...
+        > Loading personality module...
+        > Loading project assets...
+        > Establishing frontend-backend connection...
+        > Launching CV.exe...
+    </pre>
+
+    <!-- Start screen -->
+    <div class="start-screen">
+        <img src="../images/person.png" class="player" alt="player sprite" />
+        <h1>👾 Revekka Zavou</h1>
+        <p class="blink">Press <span class="key">SPACE</span> to start</p>
+
+    </div>
+
+    <!-- Main menu -->
+    <div class="menu hidden">
+        <div class="menu-item" data-path="about.html">👤 About Me</div>
+        <div class="menu-item" data-path="education.html">🎓 Education</div>
+        <div class="menu-item" data-path="projects.html">💻 Projects</div>
+        <div class="menu-item" data-path="contact.html">📞 Contact</div>
+    </div>
+
+    <!-- Sound FX -->
+    <audio id="start" src="../sounds/start.mp3" preload="auto"></audio>
+    <audio id="key" src="../sounds/key.mp3" preload="auto"></audio>
+    <audio id="enter" src="../sounds/enter.mp3" preload="auto"></audio>
+
+
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+</mabodyin>
+</html>
