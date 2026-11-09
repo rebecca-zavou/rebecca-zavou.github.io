@@ -8,65 +8,100 @@
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main>
-    <!-- Retro Boot-Up Effect -->
-    <div class="scanlines"></div>
-    <div class="loading-squares" id="loadingSquares">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-    </div>
+<main>
+  <!-- Retro Boot-Up Effect -->
+  <div class="scanlines"></div>
+  <div class="loading-squares" id="loadingSquares">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
 
-    <div class="start-screen hidden" id="startScreen">
-      <h1 class="glitch flicker">Education</h1>
-      <a href="../index.html" class="button-link">Back to Home</a>
+  <div class="start-screen hidden" id="startScreen">
+    <h1 class="glitch flicker">Education</h1>
+    <a href="../index.html" class="button-link">Back to Home</a>
 
-      <section class="education-section fade-in">
-        <div class="edu-entry">
-          <h2 class="glow">National and Kapodistrian University of Athens, Greece</h2>
-          <p>Bachelor of Science in Informatics and Telecommunications</p>
-          <p>Expected Graduation: 2025</p>
-          <p>GPA: 7/10</p>
-        </div>
+    <section class="education-section fade-in">
 
-        <div class="course-section">
-          <h3 class="glow">Relevant Courses</h3>
-          <ul class="course-list">
-            <li>Implementation of Database Management Systems (10/10)</li>
-            <li>Data Mining Techniques (9/10)</li>
-            <li>Technologies of Internet Applications (8/10)</li>
-            <li>Artificial Intelligence (8/10)</li>
-            <li>Discrete Mathematics (8/10)</li>
-            <li>Data Structures (7.5/10)</li>
-            <li>Computer Architecture (7/10)</li>
-            <li>Operating Systems (7/10)</li>
-          </ul>
-        </div>
+      <!-- ===== MSc ===== -->
+      <div class="edu-entry">
+        <h2 class="glow">National and Kapodistrian University of Athens, Greece</h2>
+        <p>Master of Science in Data Science and Information Technologies</p>
+        <p>September 2025 – Expected June 2027</p>
+        <p>Current GPA: 8.6/10</p>
+      </div>
 
-        <section class="volunteering-section">
-          <h3 class="glow">Volunteering</h3>
-            <p>
-                I had  the opportunity to serve as a Lab Assistant for the "Introduction to Programming" course. 
-                The course focuses on C programming, covering topics from beginner to intermediate level. 
-                In my role, I assist students in completing their lab tasks and provide guidance and answers to any questions they may have.
-            </p>
+      <div class="course-section">
+        <h3 class="glow">Relevant Courses</h3>
+        <ul class="course-list">
+          <li>High Data Analytics (10/10)</li>
+          <li>Information Technology (9.5/10)</li>
+          <li>Deep Neural Networks (9/10)</li>
+          <li>Big Data Management (9/10)</li>
+        </ul>
+      </div>
+
+      <!-- ===== BSc ===== -->
+      <div class="edu-entry">
+        <h2 class="glow">National and Kapodistrian University of Athens, Greece</h2>
+        <p>Bachelor of Science in Informatics and Telecommunications</p>
+        <p>September 2020 – June 2025</p>
+        <p>GPA: 7.11/10</p>
+      </div>
+
+      <div class="course-section">
+        <h3 class="glow">Relevant Courses</h3>
+        <ul class="course-list">
+          <li>Implementation of Database Management Systems (10/10)</li>
+          <li>Data Mining Techniques (9/10)</li>
+          <li>Technologies of Internet Applications (8/10)</li>
+          <li>Artificial Intelligence (8/10)</li>
+          <li>Discrete Mathematics (8/10)</li>
+          <li>Data Structures (7.5/10)</li>
+          <li>Computer Architecture (7/10)</li>
+          <li>Operating Systems (7/10)</li>
+        </ul>
+      </div>
+
+      <section class="volunteering-section">
+        <h3 class="glow">University Project</h3>
+        <p>
+          For Software Development for Information Systems, I developed a library for
+          Approximate Nearest Neighbor Search. I designed and implemented graph-based
+          algorithms such as Filtered Vamana and Stitched Vamana, optimized them for
+          high-dimensional data, and improved their performance with parallel processing,
+          backed by performance evaluation.
+        </p>
       </section>
+
+      <section class="volunteering-section">
+        <h3 class="glow">Volunteering</h3>
+        <p>
+          I served as a Volunteer Lab Assistant for the "Introduction to Programming" course,
+          which teaches C from beginner to intermediate level. I helped students work through
+          their lab tasks and coding problems, answered their questions, and encouraged clean
+          coding practices and good habits.
+        </p>
+      </section>
+
 
       <section class="languages-section">
         <h2 class="glow">Languages</h2>
         <ul class="course-list">
           <li>Greek – Native</li>
-          <li>English – C2 (ECPE), IELTS Academic (8/9)</li>
+          <li>English – C2 (ECPE), IELTS Academic 8/9</li>
           <li>French – C1 (Sorbonne)</li>
-          <br> </b>
+          <li>Spanish – B1 (preparing for DELE B2)</li>
         </ul>
       </section>
-      
-    </div>
-  </main>
 
-  <audio id="clickSound" src="../sounds/select.wav" preload="auto"></audio>
-  <script src="../js/education.js"></script>
+    </section>
+
+  </div>
+</main>
+
+<audio id="clickSound" src="../sounds/select.wav" preload="auto"></audio>
+<script src="../js/education.js"></script>
 </body>
 </html>
