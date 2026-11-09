@@ -4,26 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/projects.css" />
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <div class="loading-squares" id="loadingSquares">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
+<div class="scanlines"></div>
+
+<main>
+    <!-- Loading animation (shown first) -->
+    <div class="loading-squares" id="loadingSquares">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <div class="hidden" id="startScreen">
+
+        <!-- ===== Project list ===== -->
+        <div class="project-view" id="projectList">
+            <h1>💻 Projects</h1>
+            <p class="hint">
+                <span class="key">↑</span> <span class="key">↓</span> to choose,
+                <span class="key">ENTER</span> to open, or click
+            </p>
+
+            <div class="menu-item" data-project="flappy">🐤 Flappy Bird</div>
+
+            <div class="menu-item" data-back>⬅ Back to Home</div>
         </div>
 
-        <div class="start-screen hidden" id="startScreen">
-            <h1>🚧 Projects</h1>
-            <p class="message">Under Construction...</p>
-            <p class="subtext">Come back soon for something cool! 😎</p>
-            <a href="../index.html" class="button-link">Back to Home</a>
-        </div>
-    </main>
+        <!-- ===== Project: Flappy Bird ===== -->
+        <section class="project-view hidden" id="project-flappy">
+            <h1>🐤 Flappy Bird</h1>
 
-    <script src="../js/projects.js"></script>
+            <!-- Game-box info card -->
+            <div class="info-card">
+                <p class="panel-title">CARTRIDGE INFO</p>
+                <div class="row"><span>GENRE</span><span class="dots"></span><span>Arcade</span></div>
+                <div class="row"><span>PLATFORM</span><span class="dots"></span><span>Android 7.0+</span></div>
+                <div class="row"><span>LANGUAGE</span><span class="dots"></span><span>Kotlin</span></div>
+                <div class="row"><span>ENGINE</span><span class="dots"></span><span>None (Canvas)</span></div>
+                <div class="row"><span>PLAYERS</span><span class="dots"></span><span>1</span></div>
+                <div class="row"><span>VERSION</span><span class="dots"></span><span>1.0</span></div>
+            </div>
+
+            <div class="project-screen">
+                <video src="../videos/flappy_bird.mp4"
+                       loop muted playsinline
+                       aria-label="Flappy Bird gameplay recording"></video>
+            </div>
+
+            <!-- Build log -->
+            <div class="build-log">
+                <div class="row"><span>&gt; Game loop (delta time)</span><span class="dots"></span><span>OK</span></div>
+                <div class="row"><span>&gt; Physics: gravity, jump, tilt</span><span class="dots"></span><span>OK</span></div>
+                <div class="row"><span>&gt; Pipes: spawn, scroll, remove</span><span class="dots"></span><span>OK</span></div>
+                <div class="row"><span>&gt; Collisions + game states</span><span class="dots"></span><span>OK</span></div>
+                <div class="row"><span>&gt; Score + saved best score</span><span class="dots"></span><span>OK</span></div>
+                <div class="row"><span>&gt; Rendering: Canvas, no images</span><span class="dots"></span><span>OK</span></div>
+                <p class="build-done blink">&gt; BUILD SUCCESSFUL</p>
+            </div>
+
+            <div class="project-links">
+                <a class="menu-item"
+                   href="https://github.com/rebecca-zavou/FlappyBird/releases/latest/download/app-debug.apk">⬇ Download APK</a>
+                <a class="menu-item"
+                   href="https://github.com/rebecca-zavou/FlappyBird"
+                   target="_blank" rel="noopener">⌨ Source Code</a>
+            </div>
+            <p class="project-note">Android only. Allow "install unknown apps" when asked.</p>
+
+            <div class="menu-item" data-close>⬅ Back to Projects</div>
+            <p class="hint"><span class="key">ESC</span> to go back</p>
+        </section>
+
+    </div>
+</main>
+
+<!-- Sound FX -->
+<audio id="key" src="../sounds/key.mp3" preload="auto"></audio>
+<audio id="enter" src="../sounds/enter.mp3" preload="auto"></audio>
+
+<script src="../js/projects.js"></script>
 </body>
 </html>
